@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="/index.js" defer></script> -->
+</head>
+
+<body>
+    <!-- off canvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa-regular fa-user ps-2"></i> Hello, Sign
+                in</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="slidebar-link list-type-offcanva">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>
+                            <h3>Trending</h3>
+                        </li>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>Best Seller</li>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>New Releses</li>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>Movers And Shakers</li>
+                    </div>
+                </ul>
+                <hr />
+                <!-- second  -->
+                <ul class="slidebar-link list-type-offcanva">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>
+                            <h4>Digital Content And Device</h4>
+                        </li>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>Echo & Alexa</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>Fire Tv</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>Amazon Prime Video</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>Amazon Prime Music</li><i class="fa fa-angle-right"></i>
+                    </div>
+                </ul>
+                <hr />
+                <!-- third -->
+                <ul class="slidebar-link list-type-offcanva">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>
+                            <h4>Shop by Category</h4>
+                        </li>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>Mobiles,Computers</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>Tv Electronics</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>New Releases</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>Movers & Shakers</li><i class="fa fa-angle-right"></i>
+                    </div>
+                </ul>
+                <hr />
+                <!-- forth -->
+                <ul class="slidebar-link list-type-offcanva">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>
+                            <h4>Program & Features</h4>
+                        </li>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>Amazon Pay</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <li>Gift Card</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>Amazon Lanchpad</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li>Handloom & Handicraft</li><i class="fa fa-angle-right"></i>
+                    </div>
+                </ul>
+                <hr />
+                <!-- fifth -->
+                <ul class="slidebar-link list-type-offcanva">
+                    <div class="justify-content-between align-items-center d-flex">
+                        <h4>Help & Setting</h4>
+                    </div>
+                    <div class="justify-content-between align-items-center d-flex">
+                        <li>Your Account</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="justify-content-between align-items-center d-flex">
+                        <li>Customer Service</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="justify-content-between align-items-center d-flex">
+                        <li>Sign in</li><i class="fa fa-angle-right"></i>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mobile laptop view nav bar  -->
+    <div class="nav-m-navbar">
+        <div class="nav-searchbar-wrapper">
+            <div class="nav-logobar">
+                <div class="logbar-left d-flex">
+                    <div class="all-menu ps-4">
+                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample" aria-controls="offcanvasExample" class="all-tag"><i
+                                class="fa-solid fa-bars" style="color: #ffffff; border:none"></i></a>
+                    </div>
+                    <div class="logo-m-logbar  ps-4">
+                        <img src="https://pngimg.com/d/amazon_PNG11.png" alt="">
+                    </div>
+                </div>
+                <div class="navbar-m-belt d-flex ps-3 pe-3 pt-2">
+                    <div class="nav-m-fill d-flex">
+                        <select name="" id="" class="btn">
+                            <option value="" class="search">All</option>
+                        </select>
+                        <input type="text" placeholder="Search Amezon.in" class="input btn">
+                        <button class="searcBtn-m-logbar center btn"><img
+                                src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
+                                alt=""> </button>
+                    </div>
+                </div>
+
+                <div class="logbar-right pe-4">
+                    <div id="logbar-space">Sign in > </div>
+                    <i class="fa-regular fa-user" id="logbar-space"></i>
+                    <i class="fa-solid fa-cart-shopping" id="logbar-space"></i>
+                </div>
+            </div>
+            <!-- <div class="navbar-m-belt d-flex ps-3 pe-3"> -->
+                <!-- <div class="nav-m-fill d-flex">
+                    <select name="" id="" class="btn">
+                        <option value="" class="search">All</option>
+                    </select>
+                    <input type="text" placeholder="Search Amezon.in" class="input btn">
+                    <button class="searcBtn-m-logbar center btn"><img
+                            src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
+                            alt=""> </button>
+                </div> -->
+            <!-- </div> -->
+        </div>
+        <div class="nav-loaction-navbar">
+            <div class="loaction-m-content">
+                <i class="fa-solid fa-location-dot"></i>
+                Delivering to Ahemedabad 382350 - Update Location >
+            </div>
+        </div>
+    </div>
+    <!-- ------------------navbar-------- -->
+        <div class="main-container">
+            <div class="main-navBar ">
+                <div class="nav-belt">
+                    <div class="nav-left d-flex">
+                        <div class="logo pt-2 pt-1">
+                            <img src="https://pngimg.com/d/amazon_PNG11.png" alt="">
+                        </div>
+                        <div class="address ps-3 pt-1">
+                            <p class="daddress pt-2">Delivery to Ahemdabad 395010</p>
+                            <p class="location">Update Location</p>
+                        </div>
+                    </div>
+                    <div class="nav-fill d-flex">
+                        <select name="" id="" class="btn">
+                            <option value="" class="search">All</option>
+                        </select>
+                        <input type="text" placeholder="Search Amezon.in" class="input btn">
+                        <button class="searcBtn center btn"><img
+                                src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
+                                alt=""> </button>
+                    </div>
+                    <div class="nav-right d-flex justify-content-around ">
+                        <div class="language-container d-flex ps-3 pt-2" onclick="openNav()">
+                            <div class="fleg"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" alt="">
+                            </div>
+                            <div class="langage-button pt-1">EN<i class="fa-solid fa-caret-down"></i></div>
+                            <div class="language-select-container pt-2">
+                                <div class="langugage-menu-list-top">
+                                    <div class="language-select-option">
+                                        <input type="radio" id="english" name="fav_language" value="English-EN" checked>
+                                        <label for="english">English-EN</label>
+                                    </div>
+                                    <div class="language-select-option">
+                                        <input type="radio" id="hindi" name="fav_language" value="हिन्दी - HI">
+                                        <label for="hindi">हिन्दी - HI</label>
+                                    </div>
+                                    <div class="language-select-option">
+                                        <input type="radio" id="ta" name="fav_language" value="தமிழ் - TA">
+                                        <label for="ta">தமிழ் - TA</label>
+                                    </div>
+                                    <div class="language-select-option">
+                                        <input type="radio" id="te" name="fav_language" value="తెలుగు - TE">
+                                        <label for="te">తెలుగు - TE</label>
+                                    </div>
+                                    <div class="language-select-option">
+                                        <input type="radio" id="MR" name="fav_language" value="मराठी - MR">
+                                        <label for="MR">मराठी - MR</label>
+                                    </div>
+                                    <p class="ps-4"><a href="#">Learn more</a></p>
+                                    <div class="india-flag d-flex">
+                                        <div class="fleg"><img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png"
+                                                alt=""> </div>
+                                        <p class="ps-2 pe-2">You are shopping on Amazon.in</p>
+                                    </div>
+                                    <p class="ps-2"><a href="">Change country/region.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-container">
+                            <p class="margin-auto-space text-size">Hello,<span>Sign in</span></p>
+                            <p class="account margin-auto-space">Account & Lists</p>
+
+                            <div class="login-hover-container justify-content-center">
+                                <div class="login-first">
+                                    <button type="button" class="btn btn-warning login-btn">sign in</button>
+                                    <p>New Customer?<a href="">click heare.</a></p>
+                                </div>
+                                <hr>
+                                <div class="main-list-login">
+                                    <div class="nav-al-wishlist col-6">
+                                        <ul class="menu">
+                                            <p class="text-login">Your Lists</p>
+                                            <li><span>Create A Wish List</span></li>
+                                            <li><span>Wish from Anye</span></li>
+                                            <li><span>Baby Wishlist</span></li>
+                                            <li><span>Discover Your</span></li>
+                                            <li><span>Explore Showroom</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-al-your-account col-6">
+
+                                        <ul class="menu">
+                                            <p class="text-login">your account</p>
+                                            <li><span>your account</span></li>
+                                            <li><span>your order</span></li>
+                                            <li><span>your Wishlist</span></li>
+                                            <li><span>your prime membership</span></li>
+                                            <li><span>your prime video</span></li>
+                                            <li><span>your subscribe</span></li>
+                                            <li><span>membership & subscription</span></li>
+                                            <li><span>your Wishlist</span></li>
+                                            <li><span>your prime membership</span></li>
+                                            <li><span>your prime video</span></li>
+                                            <li><span>your subscribe</span></li>
+                                            <li><span>membership & subscription</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="return-order-container ps-4">
+                            <p class="margin-auto-space text-size">Returns</p>
+                            <span class="orders margin-auto-space">& Orders</span>
+                        </div>
+                        <div class="cart-container ps-3 pt-1 justify-content-end">
+                            <i class="fa-solid fa-cart-shopping"></i>Cart
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-sprite d-flex">
+                <div class="nav-sprite-left">
+                    <div class="all-menu nav-m-text ps-4">
+                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample" aria-controls="offcanvasExample" class="all-tag"><i
+                                class="fa-solid fa-bars" style="color: #ffffff; border:none"></i> All</a>
+                    </div>
+                </div>
+                <div class="nav-sprite-middle d-flex justify-content-around">
+                    <div class="nav-m-text">
+                        <span>Amazon Mini</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Sell</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Best Seller</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Amazon Mini</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Mobiles</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Fashion</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Books</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Home&Kitchen</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>New Relese</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Kitchen</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Amazon Pay</span>
+                    </div>
+                    <div class="nav-m-text remove3">
+                        <span>Gift ideas</span>
+                    </div>
+                    <div class="nav-m-text remove2">
+                        <span>Books</span>
+                    </div>
+                    <div class="nav-m-text remove1">
+                        <span>computer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider">
+
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="gradient-overlay">
+                                    <img src="/image/background.jpg" class="d-block slide-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="gradient-overlay">
+                                    <img src="/image/background2.jpg" class="d-block slide-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="gradient-overlay">
+                                    <img src="/image/background3.jpg" class="d-block slide-img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev justify-content-center" type="button"
+                            data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <a href="" class="a-carousel-goto-prevpage"><i class="fa-solid fa-angle-left" id="slide-fs"></i></a>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-center" type="button"
+                            data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <a href="" class="a-carousel-goto-nextpage"><i class="fa-solid fa-angle-right" id="slide-fs"></i></a>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+        
+
+
+                    <div class="cardui-main-container">
+                        <div class="row g-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="cardui">
+                                    <div class="card-inline-content">
+                                        <h6><b>Appliances for your home | Up to 55% off</b></h6>
+                                        <div class="row g-3">
+                                            <div class="col-6 ">
+                                                <div class="d-flex justify-content-center">
+                                                    <div>
+                                                        <img src="/image/cart_bad1.jpg" alt="" class="img-fluid">
+                                                        <span class="grid-img-text text-nowrap">Conditioners</span>
+                                                    </div>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad2.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Refrigerators</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad3.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Microwaves</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad4.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Washing</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grid-img-text grid-card-link">See more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                                <div class="cardui">
+                                    <div class="card-inline-content">
+                                        <h6><b>Appliances for your home | Up to 55% off</b></h6>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad1.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Conditioners</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad2.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Refrigerators</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad3.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Microwaves</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad4.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Washing</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grid-img-text grid-card-link">See more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="cardui">
+                                    <div class="card-inline-content">
+                                        <h6><b>Appliances for your home | Up to 55% off</b></h6>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad1.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Conditioners</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad2.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Refrigerators</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad3.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Microwaves</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad4.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Washing</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grid-img-text grid-card-link">See more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="cardui">
+                                    <div class="card-inline-content">
+                                        <h6><b>Appliances for your home | Up to 55% off</b></h6>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad1.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Conditioners</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad2.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Refrigerators</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad3.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Microwaves</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad4.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Washing</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grid-img-text grid-card-link">See more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="cardui">
+                                    <div class="card-inline-content">
+                                        <h6><b>Appliances for your home | Up to 55% off</b></h6>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad1.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Conditioners</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad2.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Refrigerators</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad3.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Microwaves</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad4.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Washing</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grid-img-text grid-card-link">See more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                                <div class="cardui">
+                                    <div class="card-inline-content">
+                                        <h6><b>Appliances for your home | Up to 55% off</b></h6>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad1.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Conditioners</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad2.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Refrigerators</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad3.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Microwaves</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad4.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Washing</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grid-img-text grid-card-link">See more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="cardui">
+                                    <div class="card-inline-content">
+                                        <h6><b>Appliances for your home | Up to 55% off</b></h6>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad1.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Conditioners</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad2.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Refrigerators</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad3.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Microwaves</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad4.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Washing</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grid-img-text grid-card-link">See more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="cardui">
+                                    <div class="card-inline-content">
+                                        <h6><b>Appliances for your home | Up to 55% off</b></h6>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad1.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Conditioners</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad2.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Refrigerators</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad3.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Microwaves</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="/image/cart_bad4.jpg" alt="" class="img-fluid">
+                                                <span class="grid-img-text text-nowrap">Washing</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grid-img-text grid-card-link">See more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+            <div class="main-item-slider">
+                <div class="container">
+                    <div class="">
+                        <div class="owl-carousel owl-theme slideritem">
+                            <div class="item"> <img src="/image/eyliner1.jpg" alt="" class="img-fluid"></div>
+                            <div class="item"> <img src="/image/eyeliner2.jpg" alt="" class="img-fluid"></div>
+                            <div class="item"> <img src="/image/eyliner3.jpg" alt="" class="img-fluid"></div>
+                            <div class="item"> <img src="/image/listip1.jpg" alt="" class="img-fluid"></div>
+                            <div class="item"> <img src="/image/listip3.jpg" alt="" class="img-fluid"></div>
+                            <div class="item"> <img src="/image/listip4.jpg" alt="" class="img-fluid"></div>
+                            <div class="item"> <img src="/image/listip6.jpg" alt="" class="img-fluid"></div>
+                            <div class="item"> <img src="/image/phone1.jpg" alt="" class="img-fluid"></div>
+                            <div class="item"> <img src="/image/phone3.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="back-to-top justify-content-center">
+                <h5 class="pt-2">Back To Top</h5>
+            </div>
+            <div class="back-to-center">
+                <div class="row w-100">
+                    <div class="col-2 footer-content">
+                    </div>
+                    <div class="col-2 footer-content">
+                        <div>Get to Know Us</div>
+                        <div>About Us</div>
+                        <div>Careers</div>
+                        <div>Press Releases</div>
+                        <div>Amazon Science</div>
+                    </div>
+                    <div class="col-2 footer-content">
+                        <div>Connect with Us
+                        </div>
+                        <div>Facebook
+                        </div>
+                        <div>Twitter
+                        </div>
+                        <div> Instagram</div>
+                    </div>
+                    <div class="col-3 footer-content">
+                        <div>Make Money with Us
+                        </div>
+                        <div>Sell on Amazon
+                        </div>
+                        <div> Sell under Amazon Accelerator
+                        </div>
+                        <div> Protect and Build Your Brand
+                        </div>
+                        <div>Amazon Global Selling
+                        </div>
+                        <div>Become an Affiliate
+                        </div>
+                        <div>Fulfilment by Amazon
+                        </div>
+                        <div> Advertise Your Products
+                        </div>
+                        <div> Amazon Pay on Merchants</div>
+                    </div>
+                    <div class="col-2 footer-content">
+                        <div>Let Us Help You
+                        </div>
+                        <div> COVID-19 and Amazon
+                        </div>
+                        <div> Your Account
+                        </div>
+                        <div> Returns Centre
+                        </div>
+                        <div> 100% Purchase Protection
+                        </div>
+                        <div> Amazon App Download
+                        </div>
+                        <div>Help</div>
+                    </div>
+                    <div class="col-2 footer-content">
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-part-three">
+                    <div class="row w-100">
+                        <div class="d-flex">
+                            <div class="logo-footer-logbar  ps-4">
+                                <img src="https://pngimg.com/d/amazon_PNG11.png" alt="">
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary ms-5 ps-4 pe-4">English</button>
+                            <button type="button" class="btn btn-outline-secondary ms-5 ps-4 pe-4">Hindi</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="footer-part-four">
+                    <div class="row pt-5 w-100">
+                        <div class="col-2">
+
+                        </div>
+                        <div class="col-2">
+                            <div class="abebook">
+                                <div class="footer-heading"><a href="">AbeBooks</a></div>
+                                <div class="f-content"><a href="">Books,art</a></div>
+                                <div class="f-content"><a href=""> & Collectibles</a> </div>
+
+                            </div>
+                            <div class="shopbop">
+                                <div class="footer-heading"><a href="">shopbop</a></div>
+                                <div class="f-content"><a href="">Designer</a></div>
+                                <div class="f-content"><a href="">Fashion Brands</a></div>
+
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="amzon-web">
+                                <div class="footer-heading"><a href="">Amazon Web Services</a></div>
+                                <div class="f-content"> <a href=""> Scalable Cloud</a></div>
+                                <div class="f-content"> <a href=""> Computing Services</a></div>
+
+                            </div>
+                            <div class="amzon-websurvice pt-4">
+                                <div class="footer-heading"><a href="">Amazon Business</a></div>
+                                <div class="f-content"> <a href="">Everything For</a></div>
+                                <div class="f-content"> <a href="">Your Business</a></div>
+
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="autible">
+                                <div class="footer-heading"><a href="">AbeBooks</a></div>
+                                <div class="f-content"><a href="">Books,art</a></div>
+                                <div class="f-content"><a href=""> & Collectibles</a> </div>
+                            </div>
+                            <div class="primenow pt-4">
+                                <div class="footer-heading"><a href="">shopbop</a></div>
+                                <div class="f-content"><a href="">Designer</a></div>
+                                <div class="f-content"><a href="">Fashion Brands</a></div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="imdp">
+                                <div class="footer-heading"><a href="">shopbop</a></div>
+                                <div class="f-content"><a href="">Designer</a></div>
+                                <div class="f-content"><a href="">Fashion Brands</a></div>
+                            </div>
+                            <div class="amzon-prime pt-4">
+                                <div class="footer-heading"><a href=""> Amazon Prime Music</a></div>
+                                <div class="f-content"><a href="">100 million songs, ad-free</a></div>
+                                <div class="f-content"><a href="">Over 15 million podcast episodes</a></div>
+
+                            </div>
+                        </div>
+                        <div class="col-2">
+
+                        </div>
+                    </div>
+                    <div class="footer-addres pb-5">
+                        <div class="f-info d-flex ms-5">
+                            <a href="">Conditions of Use & Sale</a>
+                            <a href="" class="ps-3"> Privacy Notice</a>
+                            <a href="" class="ps-3">Interest-Based Ads</a>
+                        </div>
+                        <div class="f-add pe-5">
+                            © 1996-2024,Amazon.com, Inc. or its affiliates
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.slideritem').owlCarousel({
+            loop: true,
+            margin: 100,
+
+            nav: true,
+            autoWidth: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+    </script>
+    <script>
+        $('.sliderbenar').owlCarousel({
+            loop: true,
+            margin: 100,
+
+            nav: true,
+            autoWidth: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
