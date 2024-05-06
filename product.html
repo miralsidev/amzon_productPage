@@ -125,7 +125,7 @@
             </div>
         </div>
     </div>
-      <!-- mobile laptop view nav bar  -->
+    <!-- mobile laptop view nav bar  -->
     <div class="nav-m-navbar">
         <div class="nav-searchbar-wrapper">
             <div class="nav-logobar">
@@ -139,23 +139,25 @@
                         <img src="https://pngimg.com/d/amazon_PNG11.png" alt="">
                     </div>
                 </div>
-                <div class="logbar-right pe-4">
+                <div class="logbar-right">
                     <div id="logbar-space">Sign in > </div>
                     <i class="fa-regular fa-user" id="logbar-space"></i>
                     <i class="fa-solid fa-cart-shopping" id="logbar-space"></i>
                 </div>
             </div>
-            <div class="navbar-m-belt d-flex ps-3 pe-3">
-                <div class="nav-m-fill d-flex">
-                    <select name="" id="" class="btn">
-                        <option value="" class="search">All</option>
-                    </select>
-                    <input type="text" placeholder="Search Amezon.in" class="input btn">
-                    <button class="searcBtn-m-logbar center btn"><img
-                            src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
-                            alt=""> </button>
+            <!-- <div class="navbar-m-belt d-flex ps-3 pe-3"> -->
+            <div class="container">
+                <div class="row height d-flex justify-content-center align-items-center">
+                    <div class="col-md-8">
+                        <div class="search">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="form-control" placeholder="Have a question? Ask Now">
+                            <button class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
         <div class="nav-loaction-navbar">
             <div class="loaction-m-content">
@@ -166,118 +168,308 @@
     </div>
     <!--------------------navbar---------->
     <div class="main-navBar ">
-        <div class="nav-belt">
-            <div class="nav-left d-flex">
-                <div class="logo pt-2 pt-1">
-                    <img src="https://pngimg.com/d/amazon_PNG11.png" alt="">
+        <div class="nav-bar-belt-main">
+            <div class="nav-belt">
+                <div class="nav-left d-flex">
+                    <div class="logo pt-2 pt-1">
+                        <img src="https://pngimg.com/d/amazon_PNG11.png" alt="">
+                    </div>
+                    <div class="address ps-3 pt-1">
+                        <p class="daddress pt-2">Delivery to Ahemdabad 395010</p>
+                        <p class="location">Update Location</p>
+                    </div>
                 </div>
-                <div class="address ps-3 pt-1">
-                    <p class="daddress pt-2">Delivery to Ahemdabad 395010</p>
-                    <p class="location">Update Location</p>
+                <div class="nav-fill d-flex">
+                    <select name="" id="" class="btn">
+                        <option value="" class="search">All</option>
+                    </select>
+                    <input type="text" placeholder="Search Amezon.in" class="input btn">
+                    <button class="searcBtn center btn"><img
+                            src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
+                            alt=""> </button>
+                </div>
+                <div class="nav-right d-flex justify-content-around ">
+                    <div class="language-container d-flex ps-3 pt-2" onclick="openNav()">
+                        <div class="fleg"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" alt="">
+                        </div>
+                        <div class="langage-button pt-1">EN<i class="fa-solid fa-caret-down"></i></div>
+                        <div class="language-select-container pt-2">
+                            <div class="langugage-menu-list-top">
+                                <div class="language-select-option">
+                                    <input type="radio" id="english" name="fav_language" value="English-EN" checked>
+                                    <label for="english">English-EN</label>
+                                </div>
+                                <div class="language-select-option">
+                                    <input type="radio" id="hindi" name="fav_language" value="हिन्दी - HI">
+                                    <label for="hindi">हिन्दी - HI</label>
+                                </div>
+                                <div class="language-select-option">
+                                    <input type="radio" id="ta" name="fav_language" value="தமிழ் - TA">
+                                    <label for="ta">தமிழ் - TA</label>
+                                </div>
+                                <div class="language-select-option">
+                                    <input type="radio" id="te" name="fav_language" value="తెలుగు - TE">
+                                    <label for="te">తెలుగు - TE</label>
+                                </div>
+                                <div class="language-select-option">
+                                    <input type="radio" id="MR" name="fav_language" value="मराठी - MR">
+                                    <label for="MR">मराठी - MR</label>
+                                </div>
+                                <p class="ps-4"><a href="#">Learn more</a></p>
+                                <div class="india-flag d-flex">
+                                    <div class="fleg"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png"
+                                            alt=""> </div>
+                                    <p class="ps-2 pe-2">You are shopping on Amazon.in</p>
+                                </div>
+                                <p class="ps-2"><a href="">Change country/region.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-container">
+                        <p class="margin-auto-space text-size">Hello,<span>Sign in</span></p>
+                        <p class="account margin-auto-space">Account & Lists</p>
+
+                        <div class="login-hover-container justify-content-center">
+                            <div class="login-first">
+                                <button type="button" class="btn btn-warning login-btn">sign in</button>
+                                <p>New Customer?<a href="">click heare.</a></p>
+                            </div>
+                            <hr>
+                            <div class="main-list-login">
+                                <div class="nav-al-wishlist col-6">
+                                    <ul class="menu">
+                                        <p class="text-login">Your Lists</p>
+                                        <li><span>Create A Wish List</span></li>
+                                        <li><span>Wish from Anye</span></li>
+                                        <li><span>Baby Wishlist</span></li>
+                                        <li><span>Discover Your</span></li>
+                                        <li><span>Explore Showroom</span></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-al-your-account col-6">
+
+                                    <ul class="menu">
+                                        <p class="text-login">your account</p>
+                                        <li><span>your account</span></li>
+                                        <li><span>your order</span></li>
+                                        <li><span>your Wishlist</span></li>
+                                        <li><span>your prime membership</span></li>
+                                        <li><span>your prime video</span></li>
+                                        <li><span>your subscribe</span></li>
+                                        <li><span>membership & subscription</span></li>
+                                        <li><span>your Wishlist</span></li>
+                                        <li><span>your prime membership</span></li>
+                                        <li><span>your prime video</span></li>
+                                        <li><span>your subscribe</span></li>
+                                        <li><span>membership & subscription</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="return-order-container ps-4">
+                        <p class="margin-auto-space text-size">Returns</p>
+                        <span class="orders margin-auto-space">& Orders</span>
+                    </div>
+                    <div class="cart-container ps-3 pt-1 justify-content-end">
+                        <i class="fa-solid fa-cart-shopping"></i>Cart
+                    </div>
                 </div>
             </div>
-            <div class="nav-fill d-flex">
-                <select name="" id="" class="btn">
-                    <option value="" class="search">All</option>
-                </select>
-                <input type="text" placeholder="Search Amezon.in" class="input btn">
-                <button class="searcBtn center btn"><img
-                        src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
-                        alt=""> </button>
+            <div class="nav-sprite d-flex">
+                <div class="nav-sprite-left">
+                    <div class="all-menu nav-m-text ps-4">
+                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample" aria-controls="offcanvasExample" class="all-tag"><i
+                                class="fa-solid fa-bars" style="color: #ffffff; border:none"></i> All</a>
+                    </div>
+                </div>
+                <div class="nav-sprite-middle d-flex justify-content-around">
+                    <div class="nav-m-text">
+                        <span>Amazon Mini</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Sell</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Best Seller</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Amazon Mini</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Mobiles</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Fashion</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Books</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Home&Kitchen</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>New Relese</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Kitchen</span>
+                    </div>
+                    <div class="nav-m-text">
+                        <span>Amazon Pay</span>
+                    </div>
+                    <div class="nav-m-text remove3">
+                        <span>Gift ideas</span>
+                    </div>
+                    <div class="nav-m-text remove2">
+                        <span>Books</span>
+                    </div>
+                    <div class="nav-m-text remove1">
+                        <span>computer</span>
+                    </div>
+                </div>
             </div>
-            <div class="nav-right d-flex justify-content-around ">
-                <div class="language-container d-flex ps-3 pt-2" onclick="openNav()">
-                    <div class="fleg"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png"
-                            alt="">
-                    </div>
-                    <div class="langage-button pt-1">EN<i class="fa-solid fa-caret-down"></i></div>
-                    <div class="language-select-container pt-2">
-                        <div class="langugage-menu-list-top">
-                            <div class="language-select-option">
-                                <input type="radio" id="english" name="fav_language" value="English-EN" checked>
-                                <label for="english">English-EN</label>
-                            </div>
-                            <div class="language-select-option">
-                                <input type="radio" id="hindi" name="fav_language" value="हिन्दी - HI">
-                                <label for="hindi">हिन्दी - HI</label>
-                            </div>
-                            <div class="language-select-option">
-                                <input type="radio" id="ta" name="fav_language" value="தமிழ் - TA">
-                                <label for="ta">தமிழ் - TA</label>
-                            </div>
-                            <div class="language-select-option">
-                                <input type="radio" id="te" name="fav_language" value="తెలుగు - TE">
-                                <label for="te">తెలుగు - TE</label>
-                            </div>
-                            <div class="language-select-option">
-                                <input type="radio" id="MR" name="fav_language" value="मराठी - MR">
-                                <label for="MR">मराठी - MR</label>
-                            </div>
-                            <p class="ps-4"><a href="#">Learn more</a></p>
-                            <div class="india-flag d-flex">
-                                <div class="fleg"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png"
-                                        alt=""> </div>
-                                <p class="ps-2 pe-2">You are shopping on Amazon.in</p>
-                            </div>
-                            <p class="ps-2"><a href="">Change country/region.</a></p>
-                        </div>
-                    </div>
+            <div class="nav-progressive-subnav justify-content-center align-items-center pt-2 d-none d-lg-flex">
+                <div class="nav-subnav justify-content-center align-items-center justify-content-around d-flex">
+                    <div class="nav-a">Amazon Home</div>
+                    <div class="nav-a">Kitchan & Home appliance</div>
+                    <div class="nav-a">Large appliance</div>
+                    <div class="nav-a">kitchan & dining</div>
+                    <div class="nav-a">furiner</div>
+                    <div class="nav-a">mobile</div>
+                    <div class="nav-a">Home decor</div>
+                    <div class="nav-a">Storage</div>
+                    <div class="nav-a">Lighitin</div>
+                    <div class="nav-a">mobile</div>
+                    <div class="nav-a">Home decor</div>
                 </div>
-                <div class="login-container">
-                    <p class="margin-auto-space text-size">Hello,<span>Sign in</span></p>
-                    <p class="account margin-auto-space">Account & Lists</p>
 
-                    <div class="login-hover-container justify-content-center">
-                        <div class="login-first">
-                            <button type="button" class="btn btn-warning login-btn">sign in</button>
-                            <p>New Customer?<a href="">click heare.</a></p>
-                        </div>
-                        <hr>
-                        <div class="main-list-login">
-                            <div class="nav-al-wishlist col-6">
-                                <ul class="menu">
-                                    <p class="text-login">Your Lists</p>
-                                    <li><span>Create A Wish List</span></li>
-                                    <li><span>Wish from Anye</span></li>
-                                    <li><span>Baby Wishlist</span></li>
-                                    <li><span>Discover Your</span></li>
-                                    <li><span>Explore Showroom</span></li>
-                                </ul>
-                            </div>
-                            <div class="nav-al-your-account col-6">
-
-                                <ul class="menu">
-                                    <p class="text-login">your account</p>
-                                    <li><span>your account</span></li>
-                                    <li><span>your order</span></li>
-                                    <li><span>your Wishlist</span></li>
-                                    <li><span>your prime membership</span></li>
-                                    <li><span>your prime video</span></li>
-                                    <li><span>your subscribe</span></li>
-                                    <li><span>membership & subscription</span></li>
-                                    <li><span>your Wishlist</span></li>
-                                    <li><span>your prime membership</span></li>
-                                    <li><span>your prime video</span></li>
-                                    <li><span>your subscribe</span></li>
-                                    <li><span>membership & subscription</span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="return-order-container ps-4">
-                    <p class="margin-auto-space text-size">Returns</p>
-                    <span class="orders margin-auto-space">& Orders</span>
-                </div>
-                <div class="cart-container ps-3 pt-1 justify-content-end">
-                    <i class="fa-solid fa-cart-shopping"></i>Cart
+            </div>
+            <div class="app-details d-flex justify-content-center">
+                <p class="pt-4">Cotton Feel All Around Elastic Fitted bedsheet</p>
+                <div class="rating pt-3 ps-5">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>1,065
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <!-- <div class="kitchan"> -->
+            <div class="showing-link align-items-center justify-content-around ps-3">
+                <a href="">Home & kitchan ></a>
+                <a href="">Home Furnishing ></a>
+                <a href="">bediiing line ></a>
+                <a href="">breadsheet</a>
+            </div>
+            <div class="row pt-3">
+                <div class="col-1">
+
+                </div>
+                <div class="leftCol col-4">
+                    <div class="main-image-container">
+                        <div id="big-image" class="text-center">
+                                <img id="img1" src="/image/bade1.jpg" alt="">
+                                <img id="img2" src="/image/bade2.jpg" alt="">
+                                <img id="img3" src="/image/bade3.jpg" alt="">
+                                <img id="img4" src="/image/bade4.jpg" alt="">
+                                <img id="img5" src="/image/bade5.jpg" alt="">
+                                <img id="img6" src="/image/bade6.jpg" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="image-canva-caption">
+                        Click to open expanded view
+                    </div>
+                    <div class="texts text-center">
+                        <span data-image="img1"><img src="/image/bade1.jpg" alt="" class="rounded mx-auto"></span>
+                        <span data-image="img2"><img src="/image/bade2.jpg" alt="" class="rounded mx-auto"></span>
+                        <span data-image="img3"><img src="/image/bade3.jpg" alt="" class="rounded mx-auto"></span>
+                        <span data-image="img4"><img src="/image/bade4.jpg" alt="" class="rounded mx-auto"></span>
+                        <span data-image="img5"><img src="/image/bade5.jpg" alt="" class="rounded mx-auto"></span>
+                        <span data-image="img6"><img src="/image/bade6.jpg" alt="" class="rounded mx-auto"></span>
+                    </div>
+                </div>
+                <div class="centerCol col-4">
+                    <div class="title-feature-div">
+                        <div>Colorish Cotton Blend Traditional Mandala Jaipuri Printed Bedsheet for Double Bed King Size with 2 Pillow Covers, Sea Green</div>
+                    </div>
+                    <div class="bylineInfo-feature-div">
+                        <a href="">Brand:Colorish</a>
+                    </div>
+                    <div class="averageCustomerReview">
+                        <div class="point">
+                            4.1
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <a href="">2,316 rarings</a>
+                    </div>
+                    <div class="acBadge-Feature">
+                       
+                    </div>
+                    <div class="Social-proof">
+                        <p>1K+ bought in past month</p>
+                    </div>
+                    <div class="celWidget">
+                        <div class="dealBadgePrice">
+                            <button type="button" class="btn btn-danger">Danger</button>
+                        </div>
+                        <div class="corepricedisplay">
+                            <span>-53%</span><span>$469</span>
+                        </div>
+                        <div class="mrp-div">
+                            M.R.P.:$999
+                        </div>
+                        <div class="inclusive">
+                            Inclusive of all taxes
+                        </div>
+                    </div>
+                    <div class="vsoffers-feature">
+                        <img src="/image/offer.png" alt="">
+                    </div>
+                    <div class="iconfarmv2-feature">
+
+                    </div>
+                    <div class="twister-feature">
+
+                    </div>
+                    <div class="productOverivew-feature">
+
+                    </div>
+                    <div class="featureBulets">
+
+                    </div>
+                    <div class="customerReview-feature">
+
+                    </div>
+                    <div class="tell-amzon-feature">
+
+                    </div>
+                </div>
+                <div class="rightCol col-2"></div>
+                <div class="col-1">
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="ppd-main">
+    
+        </div>
+    </div>
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -287,8 +479,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+            $("#big-image img:eq(0)").nextAll().hide();
+            $(".texts span").click(function (e) {
+                var imageId = $(this).attr('data-image');
+                $("#big-image #" + imageId).show().siblings().hide();
+            });
+        });
+    </script>
 </body>
 
 </html>
-
-
