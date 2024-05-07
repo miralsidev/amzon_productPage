@@ -250,6 +250,7 @@
     list-style: none;
     color: #000000;
     font-size: 0.8rem;
+    overflow: hidden;
 }
 
 /* ----------------nav-sprit */
@@ -330,7 +331,7 @@
 }
 
 .rightCol {
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .texts {
@@ -347,6 +348,10 @@
 .image-canva-caption {
     text-align: center;
     padding: 8px 0px;
+}
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: block !important; /* or any other appropriate display property */
 }
 
 /* mobile laptop view nav bar   */
