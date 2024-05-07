@@ -379,6 +379,9 @@
     width: 24px;
     height: 24px;
 }
+.vsx-heading{
+    font-weight: bold;
+}
 .a-form-label{
     display: inline;
     color: #555;
@@ -398,6 +401,9 @@
 .bulets-h1{
     font-size:16px;
     font-weight: bold;
+}
+.a-color-base, .fa-star-div{
+    line-height: 30px;
 }
 .bulet-p{
     font-size: 14px;
@@ -437,7 +443,13 @@
 }
 .busy-now-btn{
     width: 90%;
-    background: #cc7d06;
+    background: rgb(226, 128, 15) !important;
+}
+.secure-transaction{
+    color: #007185;
+}
+.card{
+    max-width: 300px;
 }
 /* mobile laptop view nav bar   */
 @media(max-width:1025px) {
