@@ -17,187 +17,400 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-    .offcanvas {
-    width: 20%;
+    
+.footer-account-link a {
+    text-decoration: none;
+    color: #007185
 }
 
-.slidbar-head {
-    background-color: #232f3e;
-    color: white;
+.footer-account-link a:hover {
+    text-decoration: none;
+    color: #C7511F
 }
 
-.offcanvas-title {
-    font-size: clamp(7px, 2vw, 19px) !important;
+.back-to-top-div {
+    background-color: #37475A;
+    font-size: 14px !important;
+    font-weight: 500;
+    padding: 1rem 0;
 }
 
-.sidebar-link {
-    list-style: none !important;
-    padding-left: 0 !important;
+.back-to-top-link {
+    text-decoration: none !important;
+
 }
 
-.silder-block-header {
-    font-size: clamp(5px, 2vw, 18px) !important;
+.footer-middle-option-div {
+    background-color: #232F3E;
+    width: 100%;
+}
+
+.footer-container {
+    padding: 30px 190px;
+}
+
+.footer-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid white !important;
+    padding: 40px 0;
+}
+
+.footer-headline {
+    color: #DDD;
+    margin-bottom: 0.5rem;
+    font-size: 20px !important;
     font-weight: 800;
+    white-space: nowrap;
+    padding-left: 20px;
 }
 
-.silder-block-text {
-    font-size: clamp(3px, 2vw, 14px) !important;
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.footer-list li a {
+    font-size: 18px !important;
+    text-decoration: none;
+    color: #DDD;
+    line-height: 1.7em;
+    font-weight: 300;
+    white-space: nowrap;
+    padding-left: 20px;
+
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+}
+
+.footer-select-item {
+    align-items: center !important;
+
+}
+
+.footer-select-items a {
+    text-decoration: none;
+    font-size:10px !important;
+}
+
+.sele {
+    background-color: transparent;
+    color: #DDD;
+
+    height: 35px;
+    cursor: pointer;
+    font-weight: 300 !important;
+    font-size:0.8rem;
+    border: none;
+}
+
+.sele option {
+    color: black;
+
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232F3E;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+.footer-bottom-area {
+    background-color: #131A22
+}
+
+.footer-bottom-area a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-bottom-area .span-x {
+    color: white;
+    font-size: 15px;
     font-weight: 100;
+    opacity: 0.6;
 }
 
+.footer-ext-txt,
+.footer-ext-txt a {
+    font-size: 12px !important;
+    font-weight: 100 !important;
+}
+@media only screen and (max-width: 410px) {
+    .footer-container {
+        padding: 30px 15px;
+
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 768px) {
+    .footer-container {
+        padding: 30px 130px;
+
+    }
+}
 </style>
 
 <body>
-    <div class="pc-canvas-view">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header slidbar-head">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa-regular fa-user"></i>&nbsp; Hello,
-                    Sign
-                    in111</h5>
-                <i class="fa-solid fa-xmark ms-5" style="color: #ffffff; font-size: clamp(10px ,2vw , 20px);"
-                    data-bs-dismiss="offcanvas" aria-label="Close"></i>
-                <!-- <button type="button" class="btn-close text-reset"></button> -->
+    <footer>
+        <div class=" pt-4 mt-4 bg-white">
+            <!-- footer account -->
+            <div class=" border border-1 rounded-1 d-flex justify-content-center">
+                <div class="row text-center py-3">
+
+                    <div class="col-12 my-1  ">
+                        <span style="font-size:15px; font-weight:400">See personalized
+                            recommendations</span>
+                    </div>
+                    <div class="col-12 my-1  ">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn  lh-lg  p-0 footer-account-btn border-0" type="button"
+                                style="font-size:15px; font-weight:600; background-color: #ffc400;">Sign In</button>
+                        </div>
+                    </div>
+                    <div class="col-12 my-1 ">
+                        <span class="footer-account-link" style="font-size:15px; font-weight:400"> New customer? <a
+                                href="#">Start
+                                here.</a></span>
+                    </div>
+                </div>
+
             </div>
-            <div class="offcanvas-body ">
-                <div>
-                    <!-- first -->
-                    <ul class="sidebar-link ">
-                        <div class="d-flex  justify-content-between my-2 ">
-                            <li>
-                                <h3 class="silder-block-header">Trending</h3>
-                            </li>
-                        </div>
-                        <div class="d-flex  justify-content-between align-items-center my-2 silder-block-text">
-                            <li>Best Seller</li>
-                        </div>
-                        <div class="d-flex  justify-content-between align-items-center my-2 silder-block-text">
-                            <li>New Releases</li>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mt-2 silder-block-text">
-                            <li>Movers & Shakers</li>
-                        </div>
-                    </ul>
+            <!-- footer middle div -->
+            <div class="mt-3 ">
+                <a href="#" class="text-white back-to-top-link">
+                    <div class="back-to-top-div d-flex justify-content-center text-white">
+                        Back to top
+                    </div>
+                </a>
 
-                    <hr />
-                    <!-- second -->
-                    <ul class="sidebar-link">
-                        <div class="d-flex  justify-content-between my-2 ">
-                            <li>
-                                <h3 class="silder-block-header">Digital Content and Devices</h3>
-                            </li>
-                        </div>
-                        <div class="d-flex align-items-center  justify-content-between my-2 silder-block-text">
-                            <li>Echo & Alexa</li><i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="d-flex align-items-center  justify-content-between my-2 silder-block-text">
-                            <li>Fire Tv</li><i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="d-flex align-items-center  justify-content-between my-2 silder-block-text">
-                            <li>Movers & Shakers</li><i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="d-flex align-items-center  justify-content-between my-2 silder-block-text">
-                            <li>Movers & Shakers</li><i class="fa fa-angle-right"></i>
-                        </div>
-                    </ul>
+                <!--OPTION LISTING  -->
 
-                    <hr />
-                    <!-- third -->
-                    <ul class="sidebar-link">
-                        <div class="d-flex  justify-content-between my-2 ">
-                            <li>
-                                <h3 class="silder-block-header">Shop by Category</h3>
-                            </li>
-                        </div>
-                        <div class="d-flex  justify-content-between my-2 silder-block-text">
-                            <li>Best Seller</li><i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="d-flex  justify-content-between my-2 silder-block-text">
-                            <li>New Releases</li><i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="d-flex justify-content-between my-2 silder-block-text">
-                            <li>Movers & Shakers</li><i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="d-flex  justify-content-between my-2 silder-block-text">
-                            <li>Movers & Shakers</li><i class="fa fa-angle-right"></i>
-                        </div>
-                    </ul>
+                <div class="footer-middle-option-div">
 
-                    <hr />
-                    <!-- Account -->
-                    <ul class="sidebar-link">
-                        <div class="d-flex  justify-content-between my-2 ">
-                            <li>
-                                <h3 class="silder-block-header">Help & Settings</h3>
-                            </li>
+                    <div class="footer-container ">
+                        <div class="text-white ">
+                            <div class="row pt-3">
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <div>
+                                        <h4 class="footer-headline">Get to Know Us</h4>
+                                        <ul class="footer-list">
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">Careers</a></li>
+                                            <li><a href="">Press Releases</a></li>
+                                            <li><a href="">Amazon Science</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <div>
+                                        <h4 class="footer-headline">Connect with Us</h4>
+                                        <ul class="footer-list">
+                                            <li><a href="">Facebook</a></li>
+                                            <li><a href="">Twitter</a></li>
+                                            <li><a href="">Instagram</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <div>
+                                        <h4 class="footer-headline">Make Money with Us</h4>
+                                        <ul class="footer-list">
+                                            <li><a href="">Sell on Amazon</a></li>
+                                            <li><a href="">Sell under Amazon Accelerator</a></li>
+                                            <li><a href="">Protect and Build Your Brand</a></li>
+                                            <li><a href="">Amazon Global Selling</a></li>
+                                            <li><a href="">Become an Affiliate</a></li>
+                                            <li><a href="">Fulfilment by Amazon</a></li>
+                                            <li><a href="">Advertise Your Products</a></li>
+                                            <li><a href="">Amazon Pay on Merchants</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <div>
+                                        <h4 class="footer-headline">Let Us Help You</h4>
+                                        <ul class="footer-list">
+                                            <li><a href="">COVID-19 and Amazon</a></li>
+                                            <li><a href="">Your Account</a></li>
+                                            <li><a href="">Returns Centre</a></li>
+                                            <li><a href="">100% Purchase Protection</a></li>
+                                            <li><a href="">Help</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex  justify-content-between my-2 silder-block-text">
-                            <li>Your Account </li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="text-white ">
+                        <hr class="my-0 mb-3">
+                    </div>
+                    <!-- footer drop down select section  -->
+                    <div class="container text-white my-3">
+                        <div class="d-flex justify-content-center">
+                            <div class="mt-2">
+                                <img src="/image/amazon-footer-logo.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="footer-logo ms-5">
+                                <div class=" border border-1 rounded-1 px-2 d-flex justify-content-center">
+                                    <i class="fa-solid fa-globe mt-2 me-4"
+                                        style="color: #ffffff; width:clamp(3px , 1vw , 13px) ;"></i>
+                                    <select name="" id="" class="sele rounded-1 border-0 ">
+                                        <option value="En"><i class="fa-light fa-globe"></i>English</option>
+                                        <option value="">Hindi</option>
+                                        <option value="">Marathi</option>
+                                        <option value="">Tamil</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="footer-logo ms-2 ">
+                                <div class="d-flex border border-1 rounded-1 px-3">
+                                    <img src="/image/India-Flag.webp" style="width:40px">
+                                    <div class="p-2" style="font-size: 12px">India</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex  justify-content-between my-2 silder-block-text">
-                            <li>Customer Services</li><i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="footer-container footer-bottom-area text-nowrap text-white">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3 m-0 ps-4 mb-4">
+                                <div>
+                                    <a href="#">AbeBooks</a>
+                                </div>
+                                <div>
+                                    <a class="span-x">
+                                        <p>
+                                            Books,art<br />
+                                            & collectibles
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-0 ps-4  mb-4">
+                                <div>
+                                    <a href="#">Amazon Web Services</a>
+                                </div>
+                                <div>
+                                    <a class="span-x">
+                                        <p>
+                                            Scalable Cloud<br />
+                                            Computing Services
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-0 ps-4  mb-4">
+                                <div>
+                                    <a href="#">Audible</a>
+                                </div>
+                                <div>
+                                    <a class="span-x">
+                                        <p>
+                                            Download<br />
+                                            Audio Books
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-0 ps-4  mb-4">
+                                <div>
+                                    <a href="#">IMDb</a>
+                                </div>
+                                <div>
+                                    <a class="span-x">
+                                        <p>
+                                            Movies ,TV<br />
+                                            & Celebreties
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-0 ps-4  mb-4">
+                                <div>
+                                    <a href="#">Shopbop</a>
+                                </div>
+                                <div>
+                                    <a class="span-x">
+                                        <p>
+                                            Designer<br />
+                                            Fashion Brands
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-0 ps-4  mb-4">
+                                <div>
+                                    <a href="#">Amazon Business</a>
+                                </div>
+                                <div>
+                                    <a class="span-x">
+                                        <p>
+                                            Everything For<br />
+                                            Your Business
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-0 ps-4  mb-4">
+                                <div>
+                                    <a href="#">Prime Now</a>
+                                </div>
+                                <div>
+                                    <a class="span-x">
+                                        <p>
+                                            2-Hour delivery<br />
+                                            on Everyday items
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-0 ps-4  mb-4">
+                                <div>
+                                    <a href="#">Amazon Prime Music</a>
+                                </div>
+                                <div>
+                                    <a class="span-x">
+                                        <p>
+                                            100 milion songs,ad-free<br />
+                                            Over 15 million podcast episodesa
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex justify-content-between my-2 silder-block-text">
-                            <li>Sign in</li><i class="fa fa-angle-right"></i>
+                        <div class="container  d-flex justify-content-center">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4 footer-ext-txt">
+                                    <a href="">Conditions of Use & Sale</a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 footer-ext-txt">
+                                    <a href="">Privacy Notice</a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 footer-ext-txt">
+                                    <a href="">Intrest-Based Ads</a>
+                                </div>
+                                <div class="mt-2 mb-0 d-flex justify-content-center footer-ext-txt">
+                                    <p>&#169; 2024, Amazon.com, Inc. or its affiliates</p>
+                                </div>
+                            </div>
+
                         </div>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="nav-sprite d-flex">
-        <div class="nav-sprite-left">
-            <div class="all-menu nav-m-text ps-4">
-                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample" aria-controls="offcanvasExample" class="all-tag"><i
-                        class="fa-solid fa-bars" style="color: #ffffff; border:none"></i> All</a>
-            </div>
-        </div>
-        <div class="nav-sprite-middle d-flex justify-content-around">
-            <div class="nav-m-text">
-                <span>Amazon Mini</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Sell</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Best Seller</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Amazon Mini</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Mobiles</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Fashion</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Books</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Home&Kitchen</span>
-            </div>
-            <div class="nav-m-text">
-                <span>New Relese</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Kitchen</span>
-            </div>
-            <div class="nav-m-text">
-                <span>Amazon Pay</span>
-            </div>
-            <div class="nav-m-text remove3">
-                <span>Gift ideas</span>
-            </div>
-            <div class="nav-m-text remove2">
-                <span>Books</span>
-            </div>
-            <div class="nav-m-text remove1">
-                <span>computer</span>
-            </div>
-        </div>
-    </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
